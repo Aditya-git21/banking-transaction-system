@@ -206,33 +206,33 @@ Each Lambda is configured using environment variables:
 
 🚀 Deployment Summary
 
-1️⃣ Create PostgreSQL RDS instance,
-2️⃣ Configure IAM roles,
-3️⃣ Deploy Debit, Credit, Rollback Lambdas
-4️⃣ Package dependencies for Linux runtime
-5️⃣ Create Step Functions state machine
-6️⃣ Validate success & failure scenarios
-7️⃣ Clean up cost-incurring resources
+- 1️⃣ Create PostgreSQL RDS instance,
+- 2️⃣ Configure IAM roles,
+- 3️⃣ Deploy Debit, Credit, Rollback Lambdas
+- 4️⃣ Package dependencies for Linux runtime
+- 5️⃣ Create Step Functions state machine
+- 6️⃣ Validate success & failure scenarios
+- 7️⃣ Clean up cost-incurring resources
 
 🔐 Security Considerations
 
-Least-privilege IAM roles
-Stateless Lambda design
-Controlled retries and timeouts
-Secure database connectivity
+- Least-privilege IAM roles
+- Stateless Lambda design
+- Controlled retries and timeouts
+- Secure database connectivity
 
 📌 Project Status
 
-✅ Core system implemented
-✅ Success and failure flows validated
-✅ Production-aligned architecture
-✅ Ready for extension and hardening
-🔮 Future Enhancements
-🌐 API Gateway for external access
-🔑 Authentication using JWT / Cognito
-🔒 AWS Secrets Manager for credentials
-📈 CloudWatch metrics and alarms
-💸 Performance and cost optimization
+- ✅ Core system implemented
+- ✅ Success and failure flows validated
+- ✅ Production-aligned architecture
+- ✅ Ready for extension and hardening
+- 🔮 Future Enhancements
+- 🌐 API Gateway for external access
+- 🔑 Authentication using JWT / Cognito
+- 🔒 AWS Secrets Manager for credentials
+- 📈 CloudWatch metrics and alarms
+- 💸 Performance and cost optimization
 
 
 
