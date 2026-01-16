@@ -183,32 +183,31 @@ The system is designed to be **failure-resilient**:
 ## ⚙️ Environment Configuration
 Each Lambda is configured using environment variables:
 
-DB_HOST
-DB_NAME
-DB_USER
-DB_PASSWORD
-DB_PORT
+- DB_HOST
+- DB_NAME
+- DB_USER
+- DB_PASSWORD
+- DB_PORT
 
-🗂️ Database Schema (Simplified
-)
-🧾 Accounts Table
+🗂️ Database Schema (Simplifie)
 
-account_id
-balance
+- 🧾 Accounts Table
+- account_id
+- balance
 
 📄 Transactions Table
 
-txn_id
-from_account
-to_account
-amount
-status
-idempotency_key
+- txn_id
+- from_account
+- to_account
+- amount
+- status
+- idempotency_key
 
 🚀 Deployment Summary
 
-1️⃣ Create PostgreSQL RDS instance
-2️⃣ Configure IAM roles
+1️⃣ Create PostgreSQL RDS instance,
+2️⃣ Configure IAM roles,
 3️⃣ Deploy Debit, Credit, Rollback Lambdas
 4️⃣ Package dependencies for Linux runtime
 5️⃣ Create Step Functions state machine
