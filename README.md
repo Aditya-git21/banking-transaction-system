@@ -45,67 +45,20 @@ The system follows a **serverless, event-driven architecture**:
 
 ## 🔁 Transaction Workflow (Saga Pattern)
 
-# 🏦 High-Availability Banking Transaction System  
-### Zero Data Loss • Exactly-Once Execution • Serverless AWS
-
----
-
-## 🚀 Introduction
-This project implements a **serverless banking transaction system** on AWS that guarantees:
-
-✅ Exactly-once execution  
-✅ Strong consistency  
-✅ Automatic rollback on failure  
-✅ Zero data loss  
-
-It solves a **real-world distributed systems problem** where partial failures during money transfers can lead to inconsistencies.
-
-The solution is built using the **Saga Pattern**, widely used in financial and payment systems.
-
----
-
-## ❓ Problem Statement
-In distributed banking systems, a transaction may fail partially:
-
-- 💸 Debit succeeds  
-- ❌ Credit fails  
-- ⚠️ System becomes inconsistent  
-
-This project ensures that:
-- ✔️ Either the transaction completes fully, or  
-- 🔄 The system safely rolls back to its original state  
-
-No partial updates. No money loss.
-
----
-
-## 🏗️ Architecture Overview
-The system follows a **serverless, event-driven architecture**:
-
-- 🧠 **AWS Step Functions** – Transaction orchestrator  
-- ⚙️ **AWS Lambda** – Debit, Credit, Rollback logic  
-- 🗄️ **Amazon RDS (PostgreSQL)** – Strongly consistent data store  
-- 🔐 **AWS IAM** – Secure access control  
-- 📊 **CloudWatch** – Logs and observability  
-
----
-
-## 🔁 Transaction Workflow (Saga Pattern)
-
-Transaction Request
-↓
-Step Functions
-↓
-Debit Lambda
-↓
-Credit Lambda
-↓
-✅ Success
-If Credit Fails
-↓
-Rollback Lambda
-↓
-❌ Safe Failure (No Data Loss)
+- Transaction Request
+- ↓
+- Step Functions
+- ↓
+- Debit Lambda
+- ↓
+- Credit Lambda
+- ↓
+- ✅ Success
+- If Credit Fails
+- ↓
+- Rollback Lambda
+- ↓
+- ❌ Safe Failure (No Data Loss)
 
 
 ---
