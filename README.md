@@ -44,7 +44,7 @@ The system follows a **serverless, event-driven architecture**:
 ---
 
 ## 🔁 Transaction Workflow (Saga Pattern)
-
+![Saga Flow](docs/saga_flow.svg)
 - Transaction Request
 - ↓
 - Step Functions
